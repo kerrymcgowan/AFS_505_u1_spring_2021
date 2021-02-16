@@ -3,7 +3,6 @@ def print_numbers(min, max):
     while min < max:
         print(f"At the top min is {min}")
         numbers.append(min)
-        #numbers.append({min})
         min = min + 1
         print("Numbers now: ", numbers)
         print(f"At the bottom min is {min}")

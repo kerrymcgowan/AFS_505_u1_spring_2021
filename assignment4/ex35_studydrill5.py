@@ -3,7 +3,13 @@ from sys import exit
 def gold_room():
     print("This room is full of gold. How much do you take?")
 
-    choice = int(input("> "))
+    choice = input("> ")
+    # this doesn't work at the moment
+    if choice.isnumeric():
+        if (choice.isdigit()):
+            how_much = int(choice)
+    else:
+        dead("Man, learn to type a number.")
 
     if choice < 50:
         print("Nice, you're not greedy, you win!")
